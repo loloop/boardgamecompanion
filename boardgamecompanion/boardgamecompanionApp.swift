@@ -25,8 +25,23 @@ struct boardgamecompanionApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            RootView()
         }
         .modelContainer(sharedModelContainer)
     }
+}
+
+import ZombieKit
+
+struct RootView: View {
+  var body: some View {
+    NavigationStack {
+      List {
+        NavigationLink("Zombicide") {
+          ZombieKit.RootView()
+        }
+      }
+      .navigationTitle("Board Game Companion")
+    }
+  }
 }

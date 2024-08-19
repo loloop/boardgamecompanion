@@ -3,8 +3,18 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 60;
+	objectVersion = 70;
 	objects = {
+
+/* Begin PBXBuildFile section */
+		B401C7022C7392B700D59144 /* ZombieKit in Frameworks */ = {isa = PBXBuildFile; productRef = B401C7012C7392B700D59144 /* ZombieKit */; };
+		B401C7042C7392BA00D59144 /* StarKit in Frameworks */ = {isa = PBXBuildFile; productRef = B401C7032C7392BA00D59144 /* StarKit */; };
+		B401C7062C7392BC00D59144 /* MonsterKit in Frameworks */ = {isa = PBXBuildFile; productRef = B401C7052C7392BC00D59144 /* MonsterKit */; };
+		B4B4FE102C7387B0002DE920 /* Common in Resources */ = {isa = PBXBuildFile; fileRef = B4B4FE0F2C7387B0002DE920 /* Common */; };
+		B4B4FE122C7387B5002DE920 /* MonsterKit in Resources */ = {isa = PBXBuildFile; fileRef = B4B4FE112C7387B5002DE920 /* MonsterKit */; };
+		B4B4FE142C7387BA002DE920 /* StarKit in Resources */ = {isa = PBXBuildFile; fileRef = B4B4FE132C7387BA002DE920 /* StarKit */; };
+		B4B4FE162C7387C1002DE920 /* ZombieKit in Resources */ = {isa = PBXBuildFile; fileRef = B4B4FE152C7387C1002DE920 /* ZombieKit */; };
+/* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		B48CD0492C73782A00C3821D /* PBXContainerItemProxy */ = {
@@ -27,6 +37,10 @@
 		B48CD0352C73782900C3821D /* boardgamecompanion.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = boardgamecompanion.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48CD0482C73782A00C3821D /* boardgamecompanionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boardgamecompanionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48CD0522C73782A00C3821D /* boardgamecompanionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = boardgamecompanionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		B4B4FE0F2C7387B0002DE920 /* Common */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = Common; sourceTree = "<group>"; };
+		B4B4FE112C7387B5002DE920 /* MonsterKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = MonsterKit; sourceTree = "<group>"; };
+		B4B4FE132C7387BA002DE920 /* StarKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = StarKit; sourceTree = "<group>"; };
+		B4B4FE152C7387C1002DE920 /* ZombieKit */ = {isa = PBXFileReference; lastKnownFileType = wrapper; path = ZombieKit; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -40,6 +54,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B401C7022C7392B700D59144 /* ZombieKit in Frameworks */,
+				B401C7042C7392BA00D59144 /* StarKit in Frameworks */,
+				B401C7062C7392BC00D59144 /* MonsterKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +77,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B401C6FE2C7392AE00D59144 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		B48CD02C2C73782900C3821D = {
 			isa = PBXGroup;
 			children = (
+				B4B4FE152C7387C1002DE920 /* ZombieKit */,
+				B4B4FE132C7387BA002DE920 /* StarKit */,
+				B4B4FE112C7387B5002DE920 /* MonsterKit */,
+				B4B4FE0F2C7387B0002DE920 /* Common */,
 				B48CD0372C73782900C3821D /* boardgamecompanion */,
 				B48CD04B2C73782A00C3821D /* boardgamecompanionTests */,
 				B48CD0552C73782A00C3821D /* boardgamecompanionUITests */,
+				B401C6FE2C7392AE00D59144 /* Frameworks */,
 				B48CD0362C73782900C3821D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +129,9 @@
 			);
 			name = boardgamecompanion;
 			packageProductDependencies = (
+				B401C7012C7392B700D59144 /* ZombieKit */,
+				B401C7032C7392BA00D59144 /* StarKit */,
+				B401C7052C7392BC00D59144 /* MonsterKit */,
 			);
 			productName = boardgamecompanion;
 			productReference = B48CD0352C73782900C3821D /* boardgamecompanion.app */;
@@ -199,6 +231,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4B4FE142C7387BA002DE920 /* StarKit in Resources */,
+				B4B4FE122C7387B5002DE920 /* MonsterKit in Resources */,
+				B4B4FE102C7387B0002DE920 /* Common in Resources */,
+				B4B4FE162C7387C1002DE920 /* ZombieKit in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -578,6 +614,21 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B401C7012C7392B700D59144 /* ZombieKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = ZombieKit;
+		};
+		B401C7032C7392BA00D59144 /* StarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = StarKit;
+		};
+		B401C7052C7392BC00D59144 /* MonsterKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = MonsterKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B48CD02D2C73782900C3821D /* Project object */;
 }
